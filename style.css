@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: inter_regular, fallback-inter_regular, Arial, sans-serif;
+}
+body{background-color:#F1F2F4;}
+nav{
+    background-color:white;
+position: sticky;
+top: 0px;
+z-index: 5;
+}
+.nav{ display:flex;
+    padding: 10px;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    max-width: 1420px;
+    margin: auto;
+    gap: 30px;
+    font-size: 15px;
+}
+.search{background-color:#f0f5ff;
+    border: none;
+width: 715px;
+    font-size: 16px;
+    height: 36px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.button{background-color: #f0f5ff;
+    padding: 4px 8px 5px;
+    border: none;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+#login{
+    font-size: 16px;
+    border: none;
+    font-weight: 200;
+}
+
+.product{
+display: flex;
+flex-direction: column;
+font-size: 14px;
+justify-content: center;
+align-items: center;
+gap: 6px;
+color:  #333;
+font-weight: 600;
+cursor: pointer;
+}
+.category
+{
+    display: flex;
+width: 100%;
+gap: 26px;
+margin: auto;
+background-color: white;
+box-sizing: border-box;
+justify-content: center;
+overflow: hidden;
+padding: 15px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 8px;
+    justify-content: center;
+    max-width:1459px;
+    margin: auto;
+    overflow: hidden;
+}
+#product{
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.price{
+    background-color: white;
+    max-width:1212px;
+    max-height: 340px;
+}
+
+h3{
+    padding: 15px;
+}
+
+.section{
+    display: flex;
+    gap: 16px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.smartphone{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(241, 242, 244);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    padding: 6px 20px 6px 10px;
+    gap: 4px;
+    min-width: 150px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.forsize{
+    max-width: 160px;
+    max-height: 186px;
+}
+
+.offer{
+    display: flex;
+    gap: 15px;
+}
+
+.coupon{
+position: relative;
+bottom: 8px;
+z-index: 0;
+cursor: pointer;}
+
+.price2{
+    background-color: white;
+    max-height: 340px;
+    position: relative;
+    bottom: 14px;
+    z-index: 1;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ padding-right: 15px;
+}
+
+.arrow{
+    background-color:#2A55E5;
+display: flex;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.ads{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 490px 490px 490px;
+    cursor: pointer;
+}
+
+footer{
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:#212121 ;
+}
+
+.lst{
+    list-style: none;
+    padding: 16px 0px;
+}
+
+.foot{
+    margin-top: 8px;
+    color:gray;
+    padding: 40px 60px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list
+{color: white;
+}
+
+.questions{
+    font-size: 12px;
+}
+
+.social{
+    display: flex;
+    gap: 10px;
+    margin-top: 7px;
+    align-items: center;
+}
+.Mail{
+    border-left: 1px solid gray;
+    padding-left: 20px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: white;
+    padding: 25px 0px;
+    font-size: 12px;
+}
+
+.option,.download{
+    display: none;
+    cursor: pointer;
+}
+.hide{
+    cursor: pointer;
+}
+@media screen and (max-width:700px) {
+    .copyright{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .foot{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    footer{
+        display:none;
+    }
+}
+
+@media screen and (max-width:1028px) {
+    .ads{
+        grid-template-columns: 490px 490px;
+    }
+}
+
+@media screen and (max-width:516px) {
+    .ads{
+        grid-template-columns: 490px;
+    }
+}
+
+@media screen and (max-width:1360px) {
+    .text{
+        display: none;
+    }
+    .search{
+        width: 458px;
+    }
+}
+
+@media screen and (max-width:971px) {
+   .hide{
+    display: none;
+   }
+.download,.option{
+    display: block;
+}
+.nav{
+    max-width: 480px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+}
